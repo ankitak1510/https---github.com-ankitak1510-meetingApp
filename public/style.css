@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#video-grid {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.main_left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_right {
+    flex: 0.2;
+}
+
+.main_videos {
+    flex-grow: 1;
+    background-image: url("https://wallpapercave.com/wp/wp2654268.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_controls {
+    display: flex;
+    background-color: rgb(108, 94, 157);
+    color: aliceblue;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.main_controls_block {
+    display: flex;
+}
+
+.main_controls_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main_controls_button:hover {
+    background-color: rgb(187, 140, 83);
+    border-radius: 5px;
+    color: black;
+}
+
+.leave_meeting {
+    color: aquamarine;
+}
+
+.main_right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(209, 161, 79);
+    border-left: 1px solid pink;
+}
+
+.main_right.active {
+    transform: translateX(0);
+}
+
+.main_header {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.main_chat_window {
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.main_message_container {
+    padding: 22px 12px;
+    display: flex;
+}
+
+.main_message_container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: rgb(93, 137, 137);
+}
+
+.main_message_container input:hover {
+    flex-grow: 1;
+    background-color: cornsilk;
+    border: none;
+    color: black
+}
+
+.messages {
+    color: rgb(19, 29, 37);
+    list-style: none;
+}
